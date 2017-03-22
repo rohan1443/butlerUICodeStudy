@@ -1,0 +1,36 @@
+{
+  "name": "butlerui",
+  "version": "1.5.0",
+  "description": "Pick Put Station user interface to perform pick put operations in the warehouse.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/gorcode/butlerui.git"
+  },
+  "keywords": [
+    "PPS",
+    "UI",
+    "Butlerui"
+  ],
+  "author": "Aatif Bandey",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/gorcode/butlerui#readme",
+  "devDependencies": {
+    "bootstrap": "^3.3.6",
+    "gulp-less": "^3.0.3",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-uglify": "^1.5.1",
+    "gulp-util": "^3.0.7",
+    "jquery": "^2.1.4",
+    "jquery-ui": "^1.10.5",
+    "virtual-keyboard": "^1.25.11",
+    "watchify": "^3.6.1"
+  },
+  "dependencies": {
+    "react": "^0.14.1",
+    "react-dom": "^0.14.1"
+  }
+}

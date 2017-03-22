@@ -1,0 +1,174 @@
+.bins {
+    /* padding-top: 3.75em;
+    padding-bottom: 3.75em;
+    padding-left: 3.75em;
+    padding-right: 3.75em;*/
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    max-height: 100%;
+    .bin-row {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        flex: 0 1 auto;
+        justify-content: center;
+        .bin {
+            position: relative;
+            border: 2px solid @text-color;
+            &.use {
+                background: @bin-selected-bck;
+                color: white;
+            }
+            &.empty {
+                background: white;
+                color: @bin-inactive-text;
+            }
+            &.selected {
+                border: 2px solid @bin-selected-bck;
+            }
+            &.pick_processed {
+                border: 2px solid #4caf50;
+            }
+            &.binError {
+                border: 2px solid #fa5882;
+            }
+            &.completed{
+             border: 2px solid green;   
+            }
+            &.staged {
+                background: @bin-staged-bck;
+                color: @bin-inactive-text;
+            }
+            &.no-excess-item{
+                color: #d1d1d1;
+                border: 2px solid #d1d1d1;
+                .pptl{
+                    background: #d1d1d1;
+                    color: white;
+                }
+            }
+            &.excess-item{
+                color: black;
+                border: 2px solid #94959a;
+                .pptl{
+                    background: #94959a;
+                    color: white;
+                }
+            }
+            &.excess-select{
+                border: 4px solid #f7941d;
+            }
+            &.selected-staging {
+                border: 8px solid @brand-primary;
+            }
+             @keyframes blink {
+               0% {
+                   border-color: @bin-selected-bck;
+               }
+               50% {
+                   border-color: @text-color;
+               }
+               100% {
+                   border-color: @bin-selected-bck;
+               }
+           }
+           &.blink1 {
+               animation: blink 2s step-end infinite;
+           }
+            .tote {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 2.2em;
+                top: 0;
+                margin: 10px;
+                background: @bin-staged-bck;
+                .info-icon {
+                    position: absolute;
+                    left: 6px;
+                    top: 6px;
+                }
+                .text {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    font-size: 1.5em;
+                }
+            }
+            .info-icon {
+                position: absolute;
+                color: white;
+                font-size: 1.5em;
+                left: 6px;
+                top: 6px;
+            }
+            .grey-icon{
+                color:grey;
+            }
+            .pptl {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                /*min-height: 15%;*/
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                align-items: center;
+                background: @text-color;
+                text-align: center;
+                color: white;
+                font-size: @font-size-body-small;
+                &.selected {
+                    background: @bin-selected-bck;
+                    color: white;
+                }
+                &.pick_processed {
+                    background: #4caf50;
+                }
+                &.binError {
+                    background: #fa5882 ;
+                }
+                &.completed {
+                    background: green;
+                    color: white;
+                }
+                &.blink {
+                    animation: blink 2s steps(2, start) infinite;
+                    -webkit-animation: blink 2s steps(2, start) infinite;
+                }
+                @keyframes blink {
+                    to {
+                        background: @text-color;
+                    }
+                }
+                @-webkit-keyframes blink {
+                    to {
+                        background: @text-color;
+                    }
+                }
+            }
+            .item-count {
+                position: absolute;
+                top: 0;
+                bottom: 20%;
+                height: 50%;
+                width: 50%;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                left: 0;
+                right: 0;
+                font-size: @font-size-body-bin-item;
+            }
+        }
+    }
+}

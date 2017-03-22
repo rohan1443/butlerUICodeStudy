@@ -1,0 +1,151 @@
+.modal {
+    top:0;
+    padding-top: 10%;
+    width: auto;
+    .modal-dialog {
+        width: 40%;
+        .modal-content {
+            display: block;
+            width: auto;
+            border-radius: 0;
+            .modal-header {
+                background: @kq-arrow-disabled;
+                box-shadow: 0 2px 4px -1px #dcdcdc;
+                .modal-title {
+                    font-size: @font-size-body-medium;
+                    font-weight: @font-weight-semi-bold;
+                    color: @passive-nav-bck;
+                }
+            }
+
+            .modal-body {
+                color: @passive-nav-bck;
+                max-height: 500px;
+                overflow-y: auto;
+                overflow-x: hidden;
+                padding: 20px;
+                font-size: @font-size-body-small;
+                header{
+                    text-align: center;
+                    font-size: 2.8rem;
+                    font-weight: 100;
+                    padding: 10px 0;
+                }
+                .item-input{
+                    border-bottom: 1px solid #ccc;
+                    padding: 20px 0;
+                    .heading{
+                        padding: 1% 3%;
+                        font-weight: bold;
+                    }
+                    .serial{
+                        text-align: center;
+                        margin-top: 6%;
+                    }
+                .row{
+                    border-bottom: 1px solid @kq-border-color;
+                    margin: 0;
+                    }
+                    .dataCaptureHead{
+                        text-align: left;
+                        font-size: 2.4rem;
+                        padding: 3% 3% 0;
+                        border-bottom:none;
+                    }
+                    .dataCaptureInput{
+                        padding: 0.5% 3% 0;
+                        border-bottom:none;
+                        input {
+                        width:100%;
+                        }
+                        input{
+                        background: #fff;
+                        border: 1px solid #c2c2c2;
+                        border-radius: unset;
+                        box-shadow: 0 4px 5px 0 #dbdbdb;
+                        font-size: 2.1rem;
+                        font-weight: unset;
+                        height: 100%;
+                        margin: 0.5vh 0;
+                        padding: 0.5% 2%;
+                        width: 100%;
+                        }
+                }
+            }
+                .key{
+                    padding: 15px;
+                   // border-right: 1px solid @kq-border-color;
+                }
+                .heading{
+                    padding: 15px;
+                    border-right: 1px solid @kq-border-color;
+                    background: @kq-border-color;
+                }
+                .value{
+                    padding: 15px;                                    
+                }
+                .binInfoValue{                     
+                     th{
+                        padding:15px;
+                        border-bottom:none;
+                        font-weight:normal;
+                     }
+                     td{
+                       padding:15px;
+                       border-top:none;
+                     }                    
+                }
+                .modalContent{
+                padding: 5vh 0;
+                .image1{
+                        float: left;
+                        margin-left: 26%;
+                    }
+                .content1{
+                        float: left;
+                        font-size: 3rem;
+                        font-weight: lighter;
+                        margin-left: 10%;
+                        margin-top:2%;
+                    }
+                }
+                .buttonContainer{
+                    width:43%;
+                }
+                .chklstButtonContainer{
+                    width: 90%;
+                }
+                .title-textbox{
+                    margin: 2% 0 3% 4%;
+                }
+                .textBox-div{
+                    margin: 0 0 4% 4%;    
+                }
+                .width95{
+                    width: 95%;
+                }
+            }
+            
+                .checklistButtonClear{
+                    border-radius: initial;
+                    font-size: 2rem;
+                    padding:3% 24%;
+                    background:#444f54 none repeat scroll 0 0;
+                    color: #fff;
+                    box-shadow: 0 7px 5px 1px #dcdcdc;
+                }
+                .checklistButtonSubmit{
+                    border-radius: initial;
+                    font-size: 2rem;
+                    padding: 8% 16%;
+                    background:#f8981d none repeat scroll 0 0;
+                    color: #fff;
+                }
+            
+            .removeBorder{
+            border-bottom:none !important;
+            border-top:none !important;
+            }
+        }
+    }
+}
